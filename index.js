@@ -5,9 +5,10 @@ const app = express();
 const PORT = 8080;
 
 app.get('/', (req, res) => {
-    res.send('API is working');
+    res.send({
+        message: 'API is working'
+    });
 });
-
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
 });
